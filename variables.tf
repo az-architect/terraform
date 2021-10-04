@@ -14,22 +14,47 @@ variable "resource_group_location" {
 variable "resource_group_tag" {
   type        = string
   description = "description of the variable"
-default = ""
+  default     = ""
 
 }
 
 variable "temp" {
   # if the type is not defined, then the variable can be used for any type.
-  # if the default is provided, then terraform will get this info at run time. 
+  # if the default is provided, then terraform will get this info at run time.
+  default = ""
 }
 
 variable "location" {
-  
-  type = string
-  default = "norwayeast"
+
+  type        = string
+  default     = "norwayeast"
   description = "resource location"
 
-  
+
+}
+
+#################### VNET################################
+variable "vnet_name" {
+  type        = string
+  description = "vnet description"
+  default     = "vnet-az303"
+
+}
+
+variable "vnet_loc" {
+  type        = string
+  description = "vnet location"
+
+
+
+}
+
+variable "subnet_name" {
+  type        = string
+  description = "subnet description"
+  default     = "vnet1"
+
+
 }
 
 
