@@ -12,4 +12,5 @@ terraform {
 
 provider "azurerm" {
   features {}
+  # here you can provide subscription details
 }
