@@ -6,3 +6,5 @@ variable "resource_group_location" {
   default = "norwayeast"
 }
 
+
+
