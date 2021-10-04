@@ -41,3 +41,9 @@ resource "azurerm_virtual_network" "az303-vnet" {
 
 
 
+# data - resource type
+# this is used to read info about a resource in the subscription
+
+
+
+
