@@ -1,7 +1,7 @@
 variable "resource_group_name" {
   type        = string
   description = "description of the variable"
-  default     = "terraform2-rg"
+  
 }
 
 variable "resource_group_location" {
@@ -24,7 +24,7 @@ variable "temp" {
   default = ""
 }
 
-variable "location" {
+variable "location_rg" {
 
   type        = string
   default     = "norwayeast"
@@ -44,6 +44,7 @@ variable "vnet_name" {
 variable "vnet_loc" {
   type        = string
   description = "vnet location"
+  default = "value"
 
 
 

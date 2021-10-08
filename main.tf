@@ -9,7 +9,7 @@
 
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
-  location = var.location
+  location = var.location_rg
 
 }
 
@@ -21,7 +21,7 @@ resource "azurerm_resource_group" "rg" {
 
 resource "azurerm_virtual_network" "az303-vnet" {
   name                = var.vnet_name
-  location            = var.vnet_loc
+  location            = var.location_rg
   resource_group_name = var.resource_group_name
   address_space       = ["10.0.0.0/16"]
   dns_servers         = ["10.0.0.4", "10.0.0.5"]
@@ -43,6 +43,12 @@ resource "azurerm_virtual_network" "az303-vnet" {
 
 # data - resource type
 # this is used to read info about a resource in the subscription
+# what is difference between mode managed and mode data. 
+
+#data "azurerm_resource_group" "name" {
+
+#}
+
 
 
 
